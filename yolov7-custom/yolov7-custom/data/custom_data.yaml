@@ -1,0 +1,4 @@
+train: ./data/train
+val: ./data/val
+nc: 4
+names: ['Team1', 'Team 2', 'Ball', 'unkown']
