@@ -121,7 +121,6 @@ def destination_dir(destination_directory):
 
 def run_all():
     directory = 'imagesTest/images/'
-
     # Get a list of all files in the directory
     files = os.listdir(directory)
 
