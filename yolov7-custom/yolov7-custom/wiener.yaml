@@ -1,0 +1,4 @@
+val: images_enhanced/wiener/
+
+nc: 7
+names: ['Corner', 'Goal', 'Penalty', 'Red card', 'Throw-Ins-in-Football', 'Yellow Card', 'header']
