@@ -1,8 +1,5 @@
 import os
 
-
-
-
 ###################Run valid weights with dataset unenhanced images#####################################
 os.system(f'python test.py --weights  runs/train/yolov7-custom8/weights/best.pt --data unenhanced.yaml --img-size 480 --batch-size 4 --verbose')
 ###################Run valid weights with dataset unenhanced images#####################################

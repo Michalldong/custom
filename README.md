@@ -1,15 +1,17 @@
 # How to Run the Code
 
+
 1. Install Anaconda
 2. Navigate to the `yolov7-custom/yolov7-custom/` folder in anaconda.
 3. Install the required dependencies:
     1. Run the following command to install the dependencies from `requirements.txt`:
         ```
-        pip install -r requirements.txt
+        pip install -r yolov7-custom/yolov7-custom/requirements.txt
         ```
     2. If you have an Nvidia GPU and want to enable GPU support, also install the dependencies from `requirements_gpu.txt`:
         ```
-        pip install -r requirements_gpu.txt
+        pip install -r yolov7-custom/yolov7-custom/requirements_gpu.txt
+
         ```
 
 4. Train the model on a specific task (requires Nvidia GPU for faster training also there is already trained models inside):
@@ -22,7 +24,7 @@
         python train.py --workers 1 --device 0 --batch-size 8 --epochs 100 --img 480 480 --data data/custom_data.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7_custom.yaml --name yolov7-custom --weights yolov7.pt
         ```
     > Note: Training without an Nvidia GPU will take a significantly longer time.
-
+   
 5. Perform image enhancement:
     * Run the `image_enhancement.py` script inside the `yolov7-custom/yolov7-custom/` folder within a python IDE such as visual studio code. Set the Python interpeter to the Anaconda one with the installed requirements.txt.
     * This will create the `images_enhanced` folder and populate it with enhanced images from the `imagesTest` folder, if it doesn't exist already.
